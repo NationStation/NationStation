@@ -32,6 +32,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Login overlay styles disabled
 .overlay {
     position: fixed;
     top: 0;
@@ -58,6 +59,7 @@ body {
     margin-top: 20px;
     color: #6c757d;
 }
+*/
 
 .recommendation {
     transition: transform 0.2s ease;
