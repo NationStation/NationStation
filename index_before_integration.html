@@ -10,6 +10,20 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="login-overlay" class="overlay">
+        <div class="login-container">
+            <h2>Nation Station Food Security Program</h2>
+            <p>Please enter your email to access the dashboard</p>
+            <div class="input-group mb-3">
+                <input type="email" id="login-email" class="form-control" placeholder="Email address" required>
+                <button class="btn btn-primary" type="button" id="login-button">Access Dashboard</button>
+            </div>
+            <div class="demo-note">
+                <p><small>Note: This is a demonstration of the login system. In a production environment, this would be connected to a secure authentication service.</small></p>
+                <p><small>For demo purposes, any email address will work.</small></p>
+            </div>
+        </div>
+    </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
@@ -30,12 +44,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#program2026">2026 Program</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cost-structure">Cost Structure</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#digital-academy">Digital Academy</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#downloads">Downloads</a>
@@ -59,7 +67,7 @@
                             <h2>Executive Summary</h2>
                         </div>
                         <div class="card-body">
-                            <p>Nation Station implements comprehensive food security programs for vulnerable families in Beirut, Lebanon. Our 2025 FDF-funded project successfully delivered emergency food assistance to 90 families (485 individuals) through six distribution rounds, achieving 100% project completion. Building on this proven model, we have designed a 2026 program that expands this approach and integrates food distribution with agricultural initiatives and nutrition education over a full year.</p>
+                            <p>Nation Station implements comprehensive food security programs for vulnerable families in Beirut, Lebanon. Our 2025 FDF-funded project successfully delivered emergency food assistance to 90 families (485 individuals) through six distribution rounds, achieving 100% project completion. Building on this proven model, we are seeking support for an expanded 2026 program that integrates food distribution with agricultural initiatives and nutrition education.</p>
                             <div class="row mt-4">
                                 <div class="col-md-3 mb-3">
                                     <div class="card h-100 border-success">
@@ -144,16 +152,6 @@
                         </div>
                     </div>
 
-                    
-                    <h3 class="mt-5">Hard-to-Reach Area: Beirut Southern Suburbs (BSS)</h3>
-                    <div class="alert alert-warning">
-                        <p>Since the 2024–2025 conflict, <strong>Beirut's Southern Suburbs (BSS)</strong> have become one of the most socio-economically vulnerable and politically sensitive areas in Lebanon. Humanitarian operations there require strict coordination with the <strong>Disaster Risk Reduction (DRR)</strong> unit, which oversees all aid entering these neighborhoods.</p>
-                        
-                        <p>Through an ongoing <strong>UN OCHA–funded food assistance program implemented with Mada Association</strong>, Nation Station obtained DRR clearance and established compliant, conflict-sensitive access to BSS. As part of this program, the DRR shared a verified beneficiary dataset for BSS with our team, including household profiles and vulnerability information.</p>
-                        
-                        <p class="mb-0">Combined with additional wartime interventions with the same donor, we now manage a large, accurate and up-to-date database of vulnerable households in BSS. This dataset underpins both our current food security work and our future digital resilience planning.</p>
-                    </div>
-
                     <h3 class="mt-5">Demographic Profile</h3>
                     <p>Our beneficiaries represent diverse vulnerable populations requiring emergency food assistance:</p>
                     
@@ -226,10 +224,6 @@
                                         <li><strong>Household composition:</strong> Special consideration for households with infants, young children, pregnant/lactating women, and elderly members</li>
                                         <li><strong>Displacement status:</strong> Priority for internally displaced and war-affected families</li>
                                     </ul>
-                                    
-                                    <div class="alert alert-info mt-3">
-                                        <p class="mb-0">In <strong>BSS</strong>, these vulnerability criteria are applied using the <strong>DRR/OCHA-validated dataset</strong> combined with our own <strong>digital assessments</strong> (income, food security scores, household composition and special needs). This dual approach minimizes inclusion and exclusion errors and helps us prioritize the most at-risk households.</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -253,8 +247,6 @@
                                         <li>Specific nutritional needs</li>
                                     </ul>
                                     <p>All data is digitally recorded, time-stamped, and geo-tagged for verification.</p>
-                                    
-                                    <p>Our small in-house <strong>digital & AI lab</strong> supports this system: it maintains and cleans the beneficiary database (including DRR/OCHA data for BSS), designs Kobo/ODK forms and simple dashboards, runs the OTP and WhatsApp communication flows where needed, and aggregates complaints and feedback for course correction.</p>
                                 </div>
                             </div>
                         </div>
@@ -296,9 +288,7 @@
 
                     <div class="alert alert-info mt-4">
                         <h5><i class="fas fa-shield-alt"></i> Additional Safeguards</h5>
-                        <p class="mb-0">Our team operates from the <strong>Nation Station facility in Geitawi Area, Ashrafieh, Beirut</strong>, a secure and neutral location. We maintain strict political neutrality and do not engage with armed groups. All procurement is done through established commercial suppliers with proper documentation, and our staff members are community-based individuals with no affiliations to armed organizations.
-                                    
-                                    <p>These controls – combined with DRR oversight in BSS, our political neutrality, and exclusive use of vetted commercial suppliers – are designed to prevent any diversion of assistance or funds to armed groups.</p>
+                        <p class="mb-0">Our team operates from the <strong>Nation Station facility in Geitawi Area, Ashrafieh, Beirut</strong>, a secure and neutral location. We maintain strict political neutrality and do not engage with armed groups. All procurement is done through established commercial suppliers with proper documentation, and our staff members are community-based individuals with no affiliations to armed organizations.</p>
                     </div>
                 </div>
             </div>
@@ -620,251 +610,6 @@
                         </div>
                     </div>
 
-                </div>
-            </div>
-        </section>
-
-
-        <!-- DIGITAL ACADEMY FUTURE DIRECTION -->
-
-        <!-- PROGRAM COST STRUCTURE SECTION -->
-        <section id="cost-structure" class="mb-5">
-            <div class="card mb-4">
-                <div class="card-header bg-primary text-white">
-                    <h2>2026 Program Cost Structure</h2>
-                </div>
-                <div class="card-body">
-                    <p>The 2026 program design has been costed at <strong>€75,000</strong> to serve 150 families over 12 months with integrated food assistance, agricultural initiatives, and nutrition education. The table below shows how we structure resources across the different components.</p>
-                    
-                    <h3 class="mt-4">Detailed Cost Breakdown</h3>
-                    <div class="table-responsive mt-3">
-                        <table class="table table-bordered table-striped">
-                            <thead class="table-primary">
-                                <tr>
-                                    <th>Budget Line</th>
-                                    <th>Description</th>
-                                    <th class="text-end">Amount (€)</th>
-                                    <th class="text-end">% of Total</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td colspan="4" class="table-secondary"><strong>1. FOOD PROCUREMENT</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Dry Goods</td>
-                                    <td>Rice, pasta, legumes, canned proteins, oil, sugar, salt, spices for 150 families x 24 distributions</td>
-                                    <td class="text-end">28,000</td>
-                                    <td class="text-end">37.3%</td>
-                                </tr>
-                                <tr>
-                                    <td>Fresh Produce</td>
-                                    <td>Vegetables, fruits, dairy products, eggs from local farmers and suppliers</td>
-                                    <td class="text-end">18,000</td>
-                                    <td class="text-end">24.0%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Subtotal: Food Procurement</strong></td>
-                                    <td></td>
-                                    <td class="text-end"><strong>46,000</strong></td>
-                                    <td class="text-end"><strong>61.3%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="4" class="table-secondary"><strong>2. AGRICULTURAL INITIATIVES</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Garden Setup</td>
-                                    <td>Site preparation, soil, composting materials for 3-4 community gardens</td>
-                                    <td class="text-end">3,500</td>
-                                    <td class="text-end">4.7%</td>
-                                </tr>
-                                <tr>
-                                    <td>Seeds & Seedlings</td>
-                                    <td>Quality vegetable seeds and seedlings for community gardens and participant distribution</td>
-                                    <td class="text-end">1,500</td>
-                                    <td class="text-end">2.0%</td>
-                                </tr>
-                                <tr>
-                                    <td>Tools & Equipment</td>
-                                    <td>Gardening tools, watering equipment, storage containers</td>
-                                    <td class="text-end">2,000</td>
-                                    <td class="text-end">2.7%</td>
-                                </tr>
-                                <tr>
-                                    <td>Agricultural Training</td>
-                                    <td>Expert trainers, training materials, demonstration supplies</td>
-                                    <td class="text-end">2,500</td>
-                                    <td class="text-end">3.3%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Subtotal: Agricultural Initiatives</strong></td>
-                                    <td></td>
-                                    <td class="text-end"><strong>9,500</strong></td>
-                                    <td class="text-end"><strong>12.7%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="4" class="table-secondary"><strong>3. LOGISTICS & OPERATIONS</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Transportation</td>
-                                    <td>Truck rental, fuel for food procurement and distribution (24 rounds)</td>
-                                    <td class="text-end">4,800</td>
-                                    <td class="text-end">6.4%</td>
-                                </tr>
-                                <tr>
-                                    <td>Packaging Materials</td>
-                                    <td>Food boxes, labels, bags, storage containers</td>
-                                    <td class="text-end">1,200</td>
-                                    <td class="text-end">1.6%</td>
-                                </tr>
-                                <tr>
-                                    <td>Warehouse & Storage</td>
-                                    <td>Facility rental, utilities, refrigeration for fresh produce</td>
-                                    <td class="text-end">2,500</td>
-                                    <td class="text-end">3.3%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Subtotal: Logistics & Operations</strong></td>
-                                    <td></td>
-                                    <td class="text-end"><strong>8,500</strong></td>
-                                    <td class="text-end"><strong>11.3%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="4" class="table-secondary"><strong>4. STAFF & COORDINATION</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Project Coordinators</td>
-                                    <td>2 coordinators (part-time) for overall project management and donor relations</td>
-                                    <td class="text-end">4,000</td>
-                                    <td class="text-end">5.3%</td>
-                                </tr>
-                                <tr>
-                                    <td>Field Staff</td>
-                                    <td>Distribution team, assessment staff, garden supervisors</td>
-                                    <td class="text-end">3,000</td>
-                                    <td class="text-end">4.0%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Subtotal: Staff & Coordination</strong></td>
-                                    <td></td>
-                                    <td class="text-end"><strong>7,000</strong></td>
-                                    <td class="text-end"><strong>9.3%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="4" class="table-secondary"><strong>5. TRAINING & EDUCATION</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Nutrition Workshops</td>
-                                    <td>Nutritionist fees, cooking demonstrations, training materials (12 sessions)</td>
-                                    <td class="text-end">1,800</td>
-                                    <td class="text-end">2.4%</td>
-                                </tr>
-                                <tr>
-                                    <td>Workshop Supplies</td>
-                                    <td>Food ingredients for demonstrations, printed materials, equipment</td>
-                                    <td class="text-end">700</td>
-                                    <td class="text-end">0.9%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Subtotal: Training & Education</strong></td>
-                                    <td></td>
-                                    <td class="text-end"><strong>2,500</strong></td>
-                                    <td class="text-end"><strong>3.3%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="4" class="table-secondary"><strong>6. MONITORING & EVALUATION</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Assessment Tools</td>
-                                    <td>Ona platform subscription, data collection devices, survey materials</td>
-                                    <td class="text-end">500</td>
-                                    <td class="text-end">0.7%</td>
-                                </tr>
-                                <tr>
-                                    <td>Documentation</td>
-                                    <td>Photography, video documentation, report production</td>
-                                    <td class="text-end">500</td>
-                                    <td class="text-end">0.7%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Subtotal: Monitoring & Evaluation</strong></td>
-                                    <td></td>
-                                    <td class="text-end"><strong>1,000</strong></td>
-                                    <td class="text-end"><strong>1.3%</strong></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="4" class="table-secondary"><strong>7. ADMINISTRATIVE COSTS</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Administration</td>
-                                    <td>Office supplies, communications, banking fees, insurance</td>
-                                    <td class="text-end">500</td>
-                                    <td class="text-end">0.7%</td>
-                                </tr>
-                                <tr class="table-primary">
-                                    <td colspan="2"><strong>TOTAL PROJECT BUDGET</strong></td>
-                                    <td class="text-end"><strong>€75,000</strong></td>
-                                    <td class="text-end"><strong>100%</strong></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="alert alert-info mt-4">
-                        <p class="mb-0">Our basic <strong>digital tools and AI-based analysis</strong> (beneficiary database, Kobo/ODK forms, dashboards, OTP and feedback processing) are covered within existing <strong>staff, M&E, and administrative lines</strong>. There is no separate "digital" budget line in this structure; digital and AI capabilities are part of how we ensure quality and accountability in food and agriculture programming.</p>
-                    </div>
-
-                    <h3 class="mt-5">Cost Efficiency & Value</h3>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <div class="card h-100">
-                                <div class="card-header bg-info text-white">
-                                    <h4>Cost per Beneficiary</h4>
-                                </div>
-                                <div class="card-body">
-                                    <ul>
-                                        <li><strong>Per person:</strong> €111 for 12 months of support (~€9.25/month)</li>
-                                        <li><strong>Per family:</strong> €500 for comprehensive food assistance and capacity building</li>
-                                        <li><strong>Food procurement:</strong> 61.3% of budget directly to food items</li>
-                                        <li><strong>Local sourcing:</strong> Partnership with local farmers reduces costs and supports local economy</li>
-                                        <li><strong>Volunteer support:</strong> Community volunteers help reduce staffing costs</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100">
-                                <div class="card-header bg-success text-white">
-                                    <h4>Program Components</h4>
-                                </div>
-                                <div class="card-body">
-                                    <ul>
-                                        <li>12 months of food assistance to 150 families (675 individuals)</li>
-                                        <li>3-4 community gardens producing 500-800 kg of vegetables</li>
-                                        <li>50 families trained in agricultural practices</li>
-                                        <li>100 participants in nutrition education</li>
-                                        <li>€18,000 supporting local farmer partnerships</li>
-                                        <li>Sustainable food security capacity building</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="alert alert-secondary mt-4">
-                        <h5><i class="fas fa-info-circle"></i> Budget Flexibility</h5>
-                        <p class="mb-0">These figures are indicative and can be adapted to different funding scenarios while preserving core objectives. We are committed to transparent financial management and detailed expense reporting throughout implementation.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="digital-academy" class="mb-5">
-            <div class="card">
-                <div class="card-header bg-info text-white">
-                    <h2>Future Direction: Digital Literacy & AI Academy in BSS</h2>
-                </div>
-                <div class="card-body">
-                    <p class="mb-0">Building on our DRR-vetted access and large verified dataset in Beirut's Southern Suburbs, Nation Station is exploring a <strong>Digital Literacy & AI Academy</strong> for vulnerable youth, unemployed adults and women-headed households. The aim is to link our humanitarian work to basic digital skills, safe technology use and pathways into the digital economy. This future component would complement – not replace – our food security and agricultural work, and can be developed with interested partners.</p>
                 </div>
             </div>
         </section>
