@@ -1,3 +1,5 @@
+function isAdmin() { return false; }
+
 // Main JavaScript functionality for the Food Security Assessment Dashboard
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -28,19 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
-    });
-    
-    // Handle download links (for demo purposes)
-    document.querySelectorAll('a[download]').forEach(link => {
-        link.addEventListener('click', function(e) {
-            // In a real implementation, these would be actual files
-            // For demo purposes, we'll show a message
-            const fileName = this.getAttribute('href').split('/').pop();
-            if (!this.href.includes('images/')) {
-                e.preventDefault();
-                alert(`In a production environment, this would download: ${fileName}\n\nFor this demo, only image downloads are enabled.`);
-            }
-        });
     });
     
     // Responsive adjustments
